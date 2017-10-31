@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
    // @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
     @IBOutlet var nextQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabelCenterXConstraint: NSLayoutConstraint!
     @IBOutlet  var answerLabel: UILabel!
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
@@ -54,6 +56,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //questionLabel.text = questions[currentQuestionIndex]
         currentQuestionLabel.text = questions[currentQuestionIndex]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,8 +64,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func updateOffScreenLabel() {
+        let screenWidth = view.frame.width
+        nextQuestionLabelCenterXConstraint.constant = -screenWidth
+    }
+    
     func animatedLabelTransitions() {
-        
         //Animated the alpha
 //        UIView.animate(withDuration: 0.5, animations: {
 //            //self.questionLabel.alpha = 1

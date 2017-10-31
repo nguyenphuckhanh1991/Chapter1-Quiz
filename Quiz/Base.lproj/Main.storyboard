@@ -95,7 +95,9 @@
                     <connections>
                         <outlet property="answerLabel" destination="ciY-hC-tCu" id="NPP-Y5-skk"/>
                         <outlet property="currentQuestionLabel" destination="efO-Sk-4yb" id="zxr-rZ-pOl"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="tuF-ba-boi" id="YAE-tP-0ZI"/>
                         <outlet property="nextQuestionLabel" destination="gkU-u6-bl7" id="X5g-sB-nrL"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="o3f-m0-cpH" id="LZd-CQ-tUe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
