@@ -20,7 +20,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efO-Sk-4yb">
                                 <rect key="frame" x="175" y="100" width="25" height="30"/>
-                                <color key="backgroundColor" red="0.81985768459833519" green="1" blue="0.93618198373121342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="FKE-al-l3R"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDI-Le-TFG">
                                 <rect key="frame" x="133" y="160" width="100" height="30"/>
-                                <color key="backgroundColor" red="0.99826711416244507" green="0.87987117372494061" blue="0.92207721092094741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DBe-Ii-cXT"/>
                                     <constraint firstAttribute="height" constant="30" id="m9J-BJ-f7M"/>
@@ -42,7 +42,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciY-hC-tCu">
                                 <rect key="frame" x="175" y="290" width="25" height="29.5"/>
-                                <color key="backgroundColor" red="0.81857281923294067" green="0.99826711416244507" blue="0.93827039003372192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ma6-Qs-6jV"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnn-nu-4qg">
                                 <rect key="frame" x="137.5" y="349.5" width="100" height="30"/>
-                                <color key="backgroundColor" red="0.99835032224655151" green="0.87990623712539673" blue="0.92333459854125977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99991601705551147" green="1" blue="0.99987202882766724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="04q-Kz-4O7"/>
                                     <constraint firstAttribute="height" constant="30" id="osT-C5-2Vl"/>
@@ -62,11 +62,23 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rd-wC-zaN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-u6-bl7">
+                                <rect key="frame" x="175" y="100" width="25" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Chr-Os-ePl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lnn-nu-4qg" firstAttribute="top" secondItem="ciY-hC-tCu" secondAttribute="bottom" constant="30" id="0id-n7-kfO"/>
+                            <constraint firstItem="gkU-u6-bl7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="1X6-CB-b1s"/>
                             <constraint firstItem="lnn-nu-4qg" firstAttribute="top" secondItem="ciY-hC-tCu" secondAttribute="bottom" constant="30" id="1kz-TL-uWe"/>
+                            <constraint firstItem="jDI-Le-TFG" firstAttribute="top" secondItem="gkU-u6-bl7" secondAttribute="bottom" constant="30" id="7XJ-dl-fqq"/>
                             <constraint firstItem="ciY-hC-tCu" firstAttribute="top" secondItem="jDI-Le-TFG" secondAttribute="bottom" constant="100" id="DL8-30-d3b"/>
                             <constraint firstItem="efO-Sk-4yb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Hud-hS-NQO"/>
                             <constraint firstItem="jDI-Le-TFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="MVJ-E3-93Q"/>
@@ -74,6 +86,7 @@
                             <constraint firstItem="ciY-hC-tCu" firstAttribute="top" secondItem="jDI-Le-TFG" secondAttribute="bottom" constant="100" id="Q7K-jC-n36"/>
                             <constraint firstItem="lnn-nu-4qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qof-jo-9hf"/>
                             <constraint firstItem="jDI-Le-TFG" firstAttribute="top" secondItem="efO-Sk-4yb" secondAttribute="bottom" constant="30" id="icH-S4-my8"/>
+                            <constraint firstItem="gkU-u6-bl7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o3f-m0-cpH"/>
                             <constraint firstItem="ciY-hC-tCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="obf-N1-NpZ"/>
                             <constraint firstItem="efO-Sk-4yb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tuF-ba-boi"/>
                         </constraints>
@@ -81,7 +94,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="ciY-hC-tCu" id="NPP-Y5-skk"/>
-                        <outlet property="questionLabel" destination="efO-Sk-4yb" id="jrw-63-KyY"/>
+                        <outlet property="currentQuestionLabel" destination="efO-Sk-4yb" id="zxr-rZ-pOl"/>
+                        <outlet property="nextQuestionLabel" destination="gkU-u6-bl7" id="X5g-sB-nrL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
