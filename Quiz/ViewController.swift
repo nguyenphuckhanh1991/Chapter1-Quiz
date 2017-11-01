@@ -56,7 +56,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //questionLabel.text = questions[currentQuestionIndex]
         currentQuestionLabel.text = questions[currentQuestionIndex]
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,11 +75,20 @@ class ViewController: UIViewController {
 //            self.currentQuestionLabel.alpha = 0
 //            self.nextQuestionLabel.alpha = 1
 //        })
+        //Force any outstanding layout changes to occur
+        view.layoutIfNeeded()
+        let screenWidth = view.frame.width
+        self.nextQuestionLabelCenterXConstraint.constant = 0
+        self.currentQuestionLabelCenterXConstraint.constant += screenWidth
+        
         UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
             self.currentQuestionLabel.alpha = 0
             self.nextQuestionLabel.alpha = 1
+            self.view.layoutIfNeeded()
         }, completion: { _ in
             swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+            swap(&self.currentQuestionLabelCenterXConstraint, &self.nextQuestionLabelCenterXConstraint)
+            self.updateOffScreenLabel()
         })
     }
 }
